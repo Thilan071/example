@@ -155,18 +155,32 @@ class ProfileScreen extends StatelessWidget {
   }
 
   Widget _buildNavItem(IconData icon, String label, {bool isSelected = false}) {
-    return Row(
-      children: [
-        Icon(icon, color: isSelected ? Colors.white : Colors.white60, size: 20),
-        const SizedBox(width: 4),
-        Text(
-          label,
-          style: TextStyle(
-            color: isSelected ? Colors.white : Colors.white60,
-            fontSize: 12,
-          ),
+    return InkWell(
+      onTap: () {
+        // Add navigation functionality here
+        print('Tapped on $label');
+      },
+      borderRadius: BorderRadius.circular(8),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
+        child: Row(
+          children: [
+            Icon(
+              icon,
+              color: isSelected ? Colors.white : Colors.white60,
+              size: 20,
+            ),
+            const SizedBox(width: 4),
+            Text(
+              label,
+              style: TextStyle(
+                color: isSelected ? Colors.white : Colors.white60,
+                fontSize: 12,
+              ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 
