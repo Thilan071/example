@@ -136,8 +136,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 16),
-
+            const SizedBox(height: 8), // Reduced from 16 to move container up
             // Empty container at the bottom (as shown in the screenshot)
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16),
@@ -148,7 +147,7 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 24),
+            const SizedBox(height: 16), // Reduced from 24 to move everything up
           ],
         ),
       ),
