@@ -69,7 +69,11 @@ class HistoryScreen extends StatelessWidget {
             ),
             child: Padding(
               padding: EdgeInsets.all(8),
-              child: Icon(Icons.access_time, size: 16, color: Colors.black54),
+              child: Image.asset(
+                'lib/assets/images/clock.png',
+                width: 24,
+                height: 24,
+              ),
             ),
           ),
           Expanded(
@@ -95,5 +99,17 @@ class HistoryScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class ClockIcon extends StatelessWidget {
+  final double size;
+  final Color? color;
+
+  const ClockIcon({Key? key, this.size = 24.0, this.color}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset('lib/assets/images/clock.png', width: 24, height: 24);
   }
 }
