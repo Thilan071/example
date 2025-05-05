@@ -6,9 +6,9 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0D2848),
+      backgroundColor: const Color(0xFF03234A),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF0D2848),
+        backgroundColor: const Color(0xFF03234A),
         elevation: 0,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
@@ -113,7 +113,7 @@ class ProfileScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 16),
               padding: const EdgeInsets.all(24), // More reasonable padding
               decoration: BoxDecoration(
-                color: const Color(0xFF091B33),
+                color: const Color(0xFF02091C),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
@@ -142,7 +142,7 @@ class ProfileScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 16),
               height: 100,
               decoration: BoxDecoration(
-                color: const Color(0xFF091B33),
+                color: const Color(0xFF02091C),
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
