@@ -48,9 +48,11 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 20),
 
             // Profile header with image and name
-            Center(
-              child: Column(
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Row(
                 children: [
+                  // Profile picture on the left
                   CircleAvatar(
                     radius: 40,
                     backgroundColor: Colors.white,
@@ -70,19 +72,25 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 12),
-                  const Text(
-                    'Hussain Abdulla',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  const Text(
-                    'Full-time Driver',
-                    style: TextStyle(color: Colors.white70, fontSize: 14),
+                  const SizedBox(width: 16),
+                  // Name and position on the right
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Text(
+                        'Hussain Abdulla',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        'Full-time Driver',
+                        style: TextStyle(color: Colors.white70, fontSize: 14),
+                      ),
+                    ],
                   ),
                 ],
               ),
