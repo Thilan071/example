@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const Color backgroundColor = Color(0xFF1F395E);
+
 class HistoryScreen extends StatelessWidget {
   const HistoryScreen({Key? key}) : super(key: key);
 
@@ -26,7 +28,7 @@ class HistoryScreen extends StatelessWidget {
     final Color historyBackgroundColor = Color(0xFF03234A);
 
     return Scaffold(
-      backgroundColor: Color(0xFF1F395C), // Blue-gray background color
+      backgroundColor: backgroundColor, // Updated to use the constant
       appBar: AppBar(
         backgroundColor: Color(0xFF03234A),
         title: Text(
@@ -44,7 +46,7 @@ class HistoryScreen extends StatelessWidget {
         elevation: 0,
       ),
       body: Container(
-        color: Color(0xFF1F395C), // Blue-gray background color
+        color: backgroundColor, // Updated to use the constant
         child: ListView.builder(
           itemCount: 12,
           itemBuilder: (context, index) {
