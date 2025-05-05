@@ -146,10 +146,10 @@ class ProfileScreen extends StatelessWidget {
   }
 
   Widget _buildNavItem(IconData icon, String label, {bool isSelected = false}) {
-    return Column(
+    return Row(
       children: [
         Icon(icon, color: isSelected ? Colors.white : Colors.white60, size: 20),
-        const SizedBox(height: 4),
+        const SizedBox(width: 4),
         Text(
           label,
           style: TextStyle(
