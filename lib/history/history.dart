@@ -58,31 +58,36 @@ class HistoryScreen extends StatelessWidget {
   Widget _buildHistoryItem() {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Column(
         children: [
-          Image.asset('lib/assets/images/clock.png', width: 24, height: 24),
-          SizedBox(width: 15),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'M. Iskandharu Villa - Hulhumale Sifco Flat',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w500,
-                  ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Image.asset('lib/assets/images/clock.png', width: 24, height: 24),
+              SizedBox(width: 15),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'M. Iskandharu Villa - Hulhumale Sifco Flat',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 4),
+                    Text(
+                      '10-4-2025, 18:00, Trip Duration 18 minute',
+                      style: TextStyle(color: Colors.white70, fontSize: 12),
+                    ),
+                  ],
                 ),
-                SizedBox(height: 4),
-                Text(
-                  '10-4-2025, 18:00, Trip Duration 18 minute',
-                  style: TextStyle(color: Colors.white70, fontSize: 12),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
+          const Divider(color: Colors.white10),
         ],
       ),
     );
