@@ -111,34 +111,25 @@ class ProfileScreen extends StatelessWidget {
             // Profile details
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16),
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(24), // More reasonable padding
               decoration: BoxDecoration(
                 color: const Color(0xFF091B33),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment:
+                    CrossAxisAlignment.start, // Ensures left alignment
                 children: [
                   _buildProfileItem('ID Card Number'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('Permanent Address'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('Present Address'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('Date of Birth'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('Employment Date'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('leave balance'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('contact number'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('emergency contact number'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('Current Job Duration'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('Email Address'),
-                  const Divider(color: Colors.white10),
                   _buildProfileItem('in service'),
                 ],
               ),
@@ -182,9 +173,13 @@ class ProfileScreen extends StatelessWidget {
   Widget _buildProfileItem(String title) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Text(
-        title,
-        style: const TextStyle(color: Colors.white, fontSize: 14),
+      child: Align(
+        alignment: Alignment.centerLeft, // Explicitly align to left
+        child: Text(
+          title,
+          style: const TextStyle(color: Colors.white, fontSize: 14),
+          textAlign: TextAlign.left, // Set text alignment to left
+        ),
       ),
     );
   }
