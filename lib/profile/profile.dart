@@ -101,7 +101,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   // White divider line under the profile
-                  Container(height: 1, color: Colors.white24),
+                  Container(height: 1.5, color: Colors.white.withOpacity(0.5)),
                 ],
               ),
             ),
