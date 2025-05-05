@@ -61,21 +61,8 @@ class HistoryScreen extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            margin: EdgeInsets.only(right: 15, top: 2),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.white.withOpacity(0.8),
-            ),
-            child: Padding(
-              padding: EdgeInsets.all(8),
-              child: Image.asset(
-                'lib/assets/images/clock.png',
-                width: 24,
-                height: 24,
-              ),
-            ),
-          ),
+          Image.asset('lib/assets/images/clock.png', width: 24, height: 24),
+          SizedBox(width: 15),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
