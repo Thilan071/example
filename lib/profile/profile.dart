@@ -106,8 +106,9 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 20),
-
+            const SizedBox(
+              height: 40,
+            ), // Increased from 20 to move the card down
             // Profile details
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16),
